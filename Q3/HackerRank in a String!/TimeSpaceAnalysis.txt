@@ -1,0 +1,5 @@
+The time complexity of 'hackerrankInString' is O(n), where n is the length of input string `s`.  
+Since The function uses a loop that iterates over each character in the string, we can reason that the time complexity must scale linearly with the size of the input. 
+The space complexity of the function is also O(n). By turning the input string `s` into `chararray` we create a new array that is proportional to the length of `s`. 
+This results in linear space complexity.
+ 
