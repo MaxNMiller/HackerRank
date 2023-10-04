@@ -1,0 +1,20 @@
+function allRotations(s)
+    rotations = []  // Initialize an empty list to store rotations
+    for i from 0 to length(s) - 1
+        s = s[1:] + s[0]  // Rotate the string by one position
+        append s to rotations  // Add the rotated string to the list
+    return rotations
+
+function main()
+    numLines = readInteger()  // Read the number of lines from input
+    lines = []  // Initialize an empty list to store input lines
+    for i from 1 to numLines
+        line = readLine()  // Read a line of input
+        append line.strip() to lines  // Remove leading/trailing whitespace and add to the list
+
+    for each line in lines
+        rotations = allRotations(line)  // Generate all rotations for the line
+        rotatedStr = join(rotations, " ")  // Join the rotations with spaces
+        print(rotatedStr)  // Print the result
+
+main()  // Call the main function to start the program
