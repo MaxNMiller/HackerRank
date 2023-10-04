@@ -1,0 +1,7 @@
+Time Analysis:
+- The function uses a for-each loop to iterate through each character in the string. This process has a time complexity of O(n).
+- Within the loop, each character is checked with the Character.isUpperCase() method, which runs in constant time O(1).
+- Since the program only does constant-time operations for each character, the overall time complexity of the function is O(n).
+
+Space Analysis:
+ The space complexity of the 'count' variable is constant O(1). However, storing the string as a char array takes O(n). Overall, the space complexity of the program is O(n)
