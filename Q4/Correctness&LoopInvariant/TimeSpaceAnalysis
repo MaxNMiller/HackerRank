@@ -1,0 +1,7 @@
+Time Complexity:
+
+   - O(n^2): On average, all elements need to make roughly n/2 comparisons before finding their spot, and since this needs to be done for n elements, the average case time complexity is O(n^2).
+
+2. Space Complexity:
+
+   - Since this program implements an insertion sort, which is an in-place sorting algorithm, it doesn't require any extra space apart from an auxilliary variable for swapping, which is constant (O(1)).
