@@ -1,0 +1,8 @@
+Time Complexity: The time complexity of this program is O(n^2), due to two operations in each recursive step of the function:
+
+1. (`s1.substring(1)`): This is a linear time operation, as a new string has to be created, which requires copying the rest of the string, an operation which takes time proportional to n.
+
+2. The `.contains()` method:  This has a has a time complexity of O(n) in the worst-case scenario (where there are no common characters until the last character)
+
+space complexity: The space complexity is determined by the maximum depth of the recursive calls. Since the depth of the recursive calls is equal to the size of `s1`,
+the space complexity of the program is O(n), where n represents the size of `s1`. 
