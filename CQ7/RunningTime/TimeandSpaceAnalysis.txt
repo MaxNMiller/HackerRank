@@ -1,0 +1,6 @@
+Time Complexity:
+As this is an implementation of Insertion Sort we already know it has an average and worst-case time complexity of O(n^2), where n is the number of elements in the list. The modifications to count the number of sorts don't
+change the overall time complexity because this change only adds constant time operations.
+
+Space Complexity:
+The space complexity of the Insertion Sort is O(1) because it uses a constant amount of extra space for variables regardless of the size of the input list.
