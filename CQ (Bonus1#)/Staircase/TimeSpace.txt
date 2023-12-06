@@ -1,0 +1,5 @@
+Time Complexity:
+The time complexity of the staircase program is O(n^2). This is because the program contains a single loop that iterates n times, and within each iteration, it performs two operations that are dependent on the size of n.
+
+Space Complexity:
+The space complexity of the program is O(n). This is due to the fact that for each iteration of the loop, a new StringBuilder object is created with a potential maximum length equivalent to n characters.
