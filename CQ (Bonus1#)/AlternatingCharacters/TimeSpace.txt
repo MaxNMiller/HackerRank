@@ -1,0 +1,7 @@
+Time Complexity:
+
+The time complexity of the program is O(n^2) because, for each recursive call, the program creates a new substring of the input string s. The creation of this new substring takes O(n) time, where n is the length of the string. Since the function could potentially be called n times in the worst case (when all characters in the string are the same), the total time complexity is O(n^2).
+
+Space Complexity
+
+The space complexity of the program is O(n). This is because the maximum depth of the recursive call stack is n, which occurs in the worst case when all characters in the string are the same. Each recursive call creates a new string, which requires additional space. Therefore, the space complexity is linear in the size of the input string.
