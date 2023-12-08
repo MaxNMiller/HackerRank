@@ -1,0 +1,3 @@
+The time complexity of the weightedUniformStrings function is O(n). This is because iterating through the input string to calculate the weights and processing the list of queries both have linear time complexity.
+
+The space complexity is O(n). This accounts for the space used by the weights set to store unique weights and the result list to store the results for each query.
