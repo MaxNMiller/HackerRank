@@ -1,7 +1,6 @@
-The complexity of 'miniMaxSum' is O(n log n). While The conversion of integers to long values, the summing operations, 
-and the print operation are all linear, 'Collections.sort' has an average time complexity of O(n log n) because it is an implementation of QuickSort.
-The space complexity of the function is O(n), since the program creates a new list (longarr) which takes up approximately the same amount of space 
-as the original list (arr). Since the other variables (mini, max) don't scale with n, they aren't factored into the overall space complexity.
+The complexity of miniMaxSum is O(n log n) since 'Collections.sort' has an average time complexity of O(n log n) 
 
 
-Note that n in this context represents the size of the input list*
+The space complexity of the function is O(n), since the program creates a new list (longarr) which takes up the same amount of space as the original list (arr). 
+
+
