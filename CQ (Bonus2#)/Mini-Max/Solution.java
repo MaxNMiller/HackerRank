@@ -12,20 +12,13 @@ class Result {
      * The function accepts INTEGER_ARRAY arr as parameter.
      */
 
-    public static void miniMaxSum(List<Integer> arr) {
-        
-        List<Long> longarr = arr.stream().map(Integer::longValue).collect(Collectors.toList());
-        Collections.sort(longarr);
+ public static void miniMaxSum(List<Integer> arr) {
+        Collections.sort(arr);
 
-        // sum without the last element (largest number)
-        long mini = longarr.get(0) + longarr.get(1) + longarr.get(2) + longarr.get(3);
-        
-       // sum without the first element (smallest number)
-        long max = longarr.get(1) + longarr.get(2) + longarr.get(3) + longarr.get(4);
+        long mini = arr.subList(0, 4).stream().mapToLong(Integer::longValue).sum();
+        long max = arr.subList(1, 5).stream().mapToLong(Integer::longValue).sum();
 
-        //Print the space-separated integers on one line
         System.out.println(mini + " " + max);
-
     }
 
 }
